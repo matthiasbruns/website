@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Services
+description: 'What I do and what you can expect'
 nav-menu: true
 image: assets/images/startup-photos.jpg
 ---
