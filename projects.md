@@ -25,7 +25,7 @@ nav-menu: true
 	{% assign project = site.data.projects[project_id] %} 
 
 	<section>
-		<a href="https://play.google.com/store/apps/details?id=de.penny.app" class="image" 
+		<a href="{{ project.outbound.url }}" class="image" 
 			onclick="ga('send', 'event', {
 				'eventCategory': 'Project Links',
 				'eventAction': 'open_{{ project.tracking.event }}_image',
