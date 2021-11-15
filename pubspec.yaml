@@ -1,0 +1,65 @@
+name: matthiasbruns
+description: Matthias Bruns Portfilio App
+publish_to: 'none'
+version: 1.0.0+1
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  flutter_svg: ^0.23.0+1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  build_runner: ^2.1.5
+  flutter_gen_runner: ^4.1.2
+  flutter_lints: ^1.0.0
+
+flutter_gen:
+  output: lib/gen/ # Optional (default: lib/gen/)
+  line_length: 80   # Optional (default: 80)
+
+  integrations:
+    flutter_svg: true
+    flare_flutter: false
+    false: true
+
+  assets:
+    enabled: true
+    package_parameter_enabled: false
+
+  fonts:
+    enabled: true
+
+  colors:
+    enabled: true
+    inputs:
+      - assets/color/colors.xml
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/svg/logo.svg
+
+#  fonts:
+#    - family: Raleway
+#      fonts:
+#        - asset: assets/fonts/Raleway-Regular.ttf
+#        - asset: assets/fonts/Raleway-Italic.ttf
+#          style: italic
+#    - family: RobotoMono
+#      fonts:
+#        - asset: assets/fonts/RobotoMono-Regular.ttf
+#        - asset: assets/fonts/RobotoMono-Bold.ttf
+#          weight: 700
+#
+#    # duplicated
+#    - family: RobotoMono
+#      fonts:
+#        - asset: assets/fonts/RobotoMono-Regular.ttf
+#        - asset: assets/fonts/RobotoMono-Bold.ttf
+#          weight: 700
